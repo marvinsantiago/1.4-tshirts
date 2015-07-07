@@ -7,15 +7,15 @@ html {
 
 .grid {
     margin: auto;
-    width: 100%;
-    overflow: auto;
+    max-width: 100%;
+    /*overflow: auto;*/
     /*padding: 20px 0 10px 10px;*/
 
 }
 
 img {
     height: 300px;
-    width: 400px;
+    width: 300px;
     border-radius: 5px;
     border: 2px solid black;
 
@@ -52,8 +52,8 @@ nav {
 }
 
 .menu, .menu ul.sub-menu {
-    padding: 10px;
-    margin: 0 12px 0 0;
+    padding: 5px;
+    margin: 0 10px 0 0;
     border: 2px solid black;
     border-radius: 5px;
     background: #666;
@@ -69,47 +69,48 @@ ul.menu li a, ul.menu li ul.sub-menu li a {
     text-decoration: none;
     color: #fff;
     background: #666;
-    padding: 5px;
+    padding: 15px;
     display:inline-block;
 }
-ul.menu li {
+.menu li {
     position: relative;
     color: #fff;
     background: #666;
 }
 
-ul.menu li ul.sub-menu {
+.menu li ul.sub-menu {
     display:none;
     position: absolute;
-    top: 30px;
-    left: 0;
-    width: 10px;
+
 }
-ul.menu li:hover ul.sub-menu {
+
+.sub-menu {
+    top: -195px;
+    left: -10px;
+    width: 69px;
+}
+.menu li:hover .sub-menu {
     display: block;
 }
 
-ul li:hover {
-     z-index: 1000;
+ul li:hover .sub-menu{
+    display: block;
 }
 
-/*Description Section*/
-.section-two {
-    position: relative;
-}
-
-.description {
+/* Footer Section*/
+.footer {
+    display: block;
     width: 33.33%;
-    background: red;
-    font-size: 2em;
 }
-
-.prod-name {
+.description {
     float: left;
+    margin-top: 5px;
 }
 
 .price {
     float: right;
+    padding-right: 20px;
+    margin-top: 5px;
 }
 
 /*Media Query*/
